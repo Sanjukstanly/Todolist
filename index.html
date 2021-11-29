@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="background: rgb(23, 86, 145);">
+  <div class="login" style="margin-top: 15%;">
+  <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">Log in</h1>
+  <form action="./todolist.html" id="form" onsubmit=" return checkform()" >
+    <div class="form" style="text-align: center; margin-top: 2%; background: aliceblue;
+     border: 2px solid red; margin-left: 35%; margin-right: 35%; padding: 30px; 
+     padding-top: 5%; padding-bottom: 5%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;> 
+    <label for="UserID">Username</label>
+    <input type="text" style="font-style: italic;" id="userid" placeholder="Enter Your Username">
+    <p id="para"></p>
+    <br>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" id="password" style="font-style: italic;" placeholder="Enter Your password">
+    <br>
+    <br>
+    <input type="submit" value="submit" >
+  </div>
+</div>
+  </form>
+  <script>
+    var userid=document.getElementById("userid");
+    var password=document.getElementById("password");
+    var para=document.getElementById("para");
+ 
+   
+    function checkform(){
+      if((userid.value=="admin")&&(password.value==12345)){
+       
+        return true;
+          }
+      
+      else{  alert("Invalid username or password");
+          return false; }
+
+    }
+  </script>
+</body>
+
+</html>
