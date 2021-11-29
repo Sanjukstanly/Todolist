@@ -26,7 +26,7 @@ function todoList() {
             `<li class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
                         <div class="d-flex align-items-center" style="color:green; text-decoration-line: line-through;
                         text-decoration-color: rgb(205, 50, 50); font-style: italic; font-family: cursive;">
-                          <input class="form-check-input me-2" type="" value="" checked disabled  aria-label="..." id="cheq" />
+                          <input class="form-check-input me-2" type="checkbox" value=""  aria-label="..." id="cheq" />
                         
                             
                           ${response[i].title}
